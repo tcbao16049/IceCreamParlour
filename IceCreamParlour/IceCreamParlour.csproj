@@ -185,6 +185,7 @@
     <Compile Include="Common\CommonConstants.cs" />
     <Compile Include="Common\Decryptor.cs" />
     <Compile Include="Common\Encryptor.cs" />
+    <Compile Include="Common\UserLogin.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
