@@ -181,6 +181,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Common\AuthorizeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -4734,7 +4735,6 @@
     <Folder Include="Assets\Client\img\lingerie\gallery\" />
     <Folder Include="Assets\Client\img\lingerie\slides\" />
     <Folder Include="Assets\Client\img\medstore\" />
-    <Folder Include="Common\" />
     <Folder Include="Dao\" />
     <Folder Include="Data\flash\" />
     <Folder Include="EF\" />
