@@ -182,6 +182,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="EF\Business.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -4737,7 +4738,6 @@
     <Folder Include="Common\" />
     <Folder Include="Dao\" />
     <Folder Include="Data\flash\" />
-    <Folder Include="EF\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
