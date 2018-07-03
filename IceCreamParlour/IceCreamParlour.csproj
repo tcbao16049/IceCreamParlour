@@ -184,6 +184,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="EF\Business.cs" />
     <Compile Include="EF\Content.cs" />
+    <Compile Include="EF\ContentCategory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
