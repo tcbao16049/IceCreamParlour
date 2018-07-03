@@ -186,6 +186,7 @@
     <Compile Include="EF\Content.cs" />
     <Compile Include="EF\ContentCategory.cs" />
     <Compile Include="EF\FeedBack.cs" />
+    <Compile Include="EF\GrantPermission.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
