@@ -193,6 +193,7 @@
     <Compile Include="EF\Payment.cs" />
     <Compile Include="EF\Permission.cs" />
     <Compile Include="EF\Price.cs" />
+    <Compile Include="EF\Producer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
