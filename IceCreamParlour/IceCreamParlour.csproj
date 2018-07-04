@@ -190,6 +190,7 @@
     <Compile Include="EF\GroupUser.cs" />
     <Compile Include="EF\Order.cs" />
     <Compile Include="EF\OrderDetail.cs" />
+    <Compile Include="EF\Payment.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
