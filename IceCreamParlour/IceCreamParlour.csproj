@@ -199,6 +199,7 @@
     <Compile Include="EF\Sale.cs" />
     <Compile Include="EF\Slide.cs" />
     <Compile Include="EF\SlideType.cs" />
+    <Compile Include="EF\SmartShopDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
