@@ -208,6 +208,7 @@
     <Compile Include="Models\EmailModel.cs" />
     <Compile Include="Models\Orders.cs" />
     <Compile Include="Models\Paypal.cs" />
+    <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
