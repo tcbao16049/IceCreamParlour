@@ -187,6 +187,7 @@
     <Compile Include="Common\Encryptor.cs" />
     <Compile Include="Common\UserLogin.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Dao\BusinessDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -4739,7 +4740,6 @@
     <Folder Include="Assets\Client\img\lingerie\gallery\" />
     <Folder Include="Assets\Client\img\lingerie\slides\" />
     <Folder Include="Assets\Client\img\medstore\" />
-    <Folder Include="Dao\" />
     <Folder Include="Data\flash\" />
     <Folder Include="EF\" />
     <Folder Include="Models\" />
