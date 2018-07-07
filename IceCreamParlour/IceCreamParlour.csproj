@@ -191,6 +191,7 @@
     <Compile Include="Dao\ContentCategoryDAO.cs" />
     <Compile Include="Dao\ContentDAO.cs" />
     <Compile Include="Dao\FeedBackDAO.cs" />
+    <Compile Include="Dao\GrantPermissionDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
