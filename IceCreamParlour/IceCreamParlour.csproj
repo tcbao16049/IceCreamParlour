@@ -195,6 +195,7 @@
     <Compile Include="Dao\GroupUserDAO.cs" />
     <Compile Include="Dao\OrderDAO.cs" />
     <Compile Include="Dao\OrderDetailDAO.cs" />
+    <Compile Include="Dao\PermissionDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
