@@ -201,6 +201,7 @@
     <Compile Include="Dao\ProductCategoryDAO.cs" />
     <Compile Include="Dao\ProductDAO.cs" />
     <Compile Include="Dao\SaleDAO.cs" />
+    <Compile Include="Dao\SlideDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
