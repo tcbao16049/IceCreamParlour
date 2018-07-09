@@ -200,6 +200,7 @@
     <Compile Include="Dao\ProducerDao.cs" />
     <Compile Include="Dao\ProductCategoryDAO.cs" />
     <Compile Include="Dao\ProductDAO.cs" />
+    <Compile Include="Dao\SaleDAO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
