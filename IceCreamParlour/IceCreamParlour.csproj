@@ -4720,6 +4720,8 @@
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound5.ogg" />
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound6.ogg" />
     <Content Include="Areas\Admin\Views\Business\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ContentCategory\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ContentCategory\RecycelBin.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -4749,7 +4751,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Views\ContentCategory\" />
     <Folder Include="Areas\Admin\Views\Content\" />
     <Folder Include="Areas\Admin\Views\GrantPermission\" />
     <Folder Include="Areas\Admin\Views\GroupUser\" />
