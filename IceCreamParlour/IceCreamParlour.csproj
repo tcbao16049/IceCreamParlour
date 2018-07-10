@@ -182,6 +182,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\BusinessController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContentCategoryController.cs" />
     <Compile Include="Areas\Admin\Models\BusinessModel\PermissionAction.cs" />
     <Compile Include="Areas\Admin\Models\BusinessModel\ReflectionController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
@@ -4748,6 +4749,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Views\ContentCategory\" />
+    <Folder Include="Areas\Admin\Views\Content\" />
+    <Folder Include="Areas\Admin\Views\GrantPermission\" />
+    <Folder Include="Areas\Admin\Views\GroupUser\" />
+    <Folder Include="Areas\Admin\Views\Home\" />
+    <Folder Include="Areas\Admin\Views\Permission\" />
+    <Folder Include="Areas\Admin\Views\Price\" />
+    <Folder Include="Areas\Admin\Views\Producer\" />
+    <Folder Include="Areas\Admin\Views\ProductCategory\" />
+    <Folder Include="Areas\Admin\Views\Product\" />
+    <Folder Include="Areas\Admin\Views\Sale\" />
+    <Folder Include="Areas\Admin\Views\Slide\" />
+    <Folder Include="Areas\Admin\Views\User\" />
     <Folder Include="Assets\Admin\images\" />
     <Folder Include="Assets\Client\img\bioproduct\category-icons\" />
     <Folder Include="Assets\Client\img\bioproduct\images\" />
