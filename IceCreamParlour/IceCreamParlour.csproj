@@ -183,6 +183,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\BusinessController.cs" />
     <Compile Include="Areas\Admin\Controllers\ContentCategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContentController.cs" />
     <Compile Include="Areas\Admin\Models\BusinessModel\PermissionAction.cs" />
     <Compile Include="Areas\Admin\Models\BusinessModel\ReflectionController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
