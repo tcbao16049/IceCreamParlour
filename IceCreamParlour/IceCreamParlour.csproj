@@ -181,6 +181,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Models\BusinessModel\PermissionAction.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Areas\Admin\Models\UserModel.cs" />
     <Compile Include="Common\AuthorizeController.cs" />
@@ -4745,7 +4746,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Areas\Admin\Models\BusinessModel\" />
     <Folder Include="Assets\Admin\images\" />
     <Folder Include="Assets\Client\img\bioproduct\category-icons\" />
     <Folder Include="Assets\Client\img\bioproduct\images\" />
