@@ -4745,6 +4745,7 @@
     <Content Include="Views\Cart\CartHeader.cshtml" />
     <Content Include="Views\Cart\CartRight.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Cart\Payment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
