@@ -4750,6 +4750,7 @@
     <Content Include="Views\Cart\Success.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Product\NewProduct.cshtml" />
+    <Content Include="Views\Product\ProductFeature.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
