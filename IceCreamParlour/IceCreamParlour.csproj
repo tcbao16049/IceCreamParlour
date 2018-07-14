@@ -4740,6 +4740,7 @@
     <Content Include="Areas\Admin\Views\Home\NotificationAuthorize.cshtml" />
     <Content Include="Areas\Admin\Views\Order\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Order\Detail.cshtml" />
+    <Content Include="Areas\Admin\Views\Permission\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -4769,7 +4770,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Views\Permission\" />
     <Folder Include="Areas\Admin\Views\Price\" />
     <Folder Include="Areas\Admin\Views\Producer\" />
     <Folder Include="Areas\Admin\Views\ProductCategory\" />
