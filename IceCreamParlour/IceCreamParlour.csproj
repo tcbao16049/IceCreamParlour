@@ -183,6 +183,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="EF\Business.cs" />
     <Compile Include="EF\Content.cs" />
     <Compile Include="EF\ContentCategory.cs" />
