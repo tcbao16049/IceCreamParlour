@@ -4730,6 +4730,9 @@
     <Content Include="Areas\Admin\Views\Content\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Content\RecycelBin.cshtml" />
     <Content Include="Areas\Admin\Views\GrantPermission\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\GroupUser\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\GroupUser\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\GroupUser\Edit.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -4759,7 +4762,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Views\GroupUser\" />
     <Folder Include="Areas\Admin\Views\Home\" />
     <Folder Include="Areas\Admin\Views\Permission\" />
     <Folder Include="Areas\Admin\Views\Price\" />
