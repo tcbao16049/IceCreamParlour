@@ -4718,6 +4718,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\ChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
