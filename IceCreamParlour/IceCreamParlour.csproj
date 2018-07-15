@@ -4757,6 +4757,7 @@
     <Content Include="Views\Product\ProductcategoryDessert.cshtml" />
     <Content Include="Views\Product\Detail.cshtml" />
     <Content Include="Views\Product\ProductsRelated.cshtml" />
+    <Content Include="Views\Product\_Category.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
