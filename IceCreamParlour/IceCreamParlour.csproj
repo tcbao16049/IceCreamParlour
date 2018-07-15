@@ -4692,6 +4692,7 @@
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound4.ogg" />
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound5.ogg" />
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound6.ogg" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
