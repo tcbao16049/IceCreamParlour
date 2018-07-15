@@ -4753,6 +4753,7 @@
     <Content Include="Views\Product\ProductFeature.cshtml" />
     <Content Include="Views\Product\SaleProduct.cshtml" />
     <Content Include="Views\Product\ProductcategoryBook.cshtml" />
+    <Content Include="Views\Product\ProductcategoryCream.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
