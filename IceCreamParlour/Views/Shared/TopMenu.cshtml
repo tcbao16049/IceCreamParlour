@@ -1,0 +1,121 @@
+﻿@model IEnumerable<ProjectSEM3.EF.Producer>
+<div class="span12" style="background-color: #000000; ">
+    <nav>
+        <ul class="nav nav-list" >
+            <li class="nav-header">
+                <a href="#level0" title="" data-toggle="collapse" class="collapsed"><i class="icon-th"></i>&nbsp;&nbsp;MENU<i class="icon-up pull-right"></i><i class="icon-down pull-right"></i> </a>
+                <ul class="collapse in" id="level0">
+                    <li> <a href="/Home">Trang chủ </a></li>
+                    <li>
+                        <a href="/ice-cream">Ice Cream </a> <a class="icon-collapse collapsed" href="#level1" title="" data-toggle="collapse"><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>
+                        <ul class="collapse in" id="level1">
+                            @foreach (var item in Model)
+                            {
+
+                                <li> <a href="/ice-cream/@item.MetaTitle-@item.ID"> <span>@item.Name</span> </a> </li>
+                            }
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/books">Books </a> <a class="icon-collapse collapsed" href="#level1" title="" data-toggle="collapse"><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>
+                        <ul class="collapse in" id="level1">
+                            @foreach (var item in Model)
+                            {
+
+                                <li> <a href="/books/@item.MetaTitle-@item.ID"> <span>@item.Name</span> </a> </li>
+                            }
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="/dessert">Dessert</a> <a class="icon-collapse collapsed" href="#level1" title="" data-toggle="collapse"><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>
+                        <ul class="collapse in" id="level1">
+                            @foreach (var item in Model)
+                            {
+
+                                <li> <a href="/dessert/@item.MetaTitle-@item.ID"> <span>@item.Name</span> </a> </li>
+                            }
+                        </ul>
+
+                    </li>
+                    <li> <a href="/bai-viet/">Tin Tức</a> </li>
+                    <li> <a href="#">Liên hệ </a> </li>
+                    <li> <a href="/feed-back/">Phản Hồi </a> </li>
+                </ul>
+        </ul>
+     
+    </nav>
+    <nav>
+        <!--MENU-->
+        <ul class="menu" id="nav">
+            <li class="menu_home_link"><a href="/Home"><i class="icon-home"></i></a></li>
+            <li class="dropdown">
+                <a href="#">Ice Cream</a>
+                <ul class="level0 one-column">
+                    <li>
+                        <ul class="shadow">
+                            <li class="list_column">
+                                <ul class="list_in_column">
+                                    @foreach (var item in Model)
+                                    {
+                                        <li class="level1"> <a href="/ice-cream/@item.MetaTitle-@item.ID"> <span>@item.Name</span> </a> </li>
+                                    }
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Books</a>
+                <ul class="level0 one-column">
+                    <li>
+                        <ul class="shadow">
+                            <li class="list_column">
+                                <ul class="list_in_column">
+                                    @foreach (var item in Model)
+                                    {
+                                        <li class="level1"> <a href="/books/@item.MetaTitle-@item.ID"> <span>@item.Name</span> </a> </li>
+                                    }
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            @if (Session["UsernameMember"] != null)
+            {
+            <li class="dropdown">
+                <a href="#">Dessert</a>
+                <ul class="level0 one-column">
+                    <li>
+                        <ul class="shadow">
+                            <li class="list_column">
+                                <ul class="list_in_column">
+                                    @foreach (var item in Model)
+                                    {
+                                        <li class="level1"> <a href="/dessert/@item.MetaTitle-@item.ID"> <span>@item.Name</span> </a> </li>
+                                    }
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            }
+
+            <li> <a href="/bai-viet/">Tin Tức </a> </li>
+            <li> <a href="#">Liên hệ </a> </li>
+            <li> <a href="/feed-back/">Phản Hồi </a> </li>
+        </ul>
+        <!--MENU-->
+    </nav>
+</div>
