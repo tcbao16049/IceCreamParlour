@@ -4762,6 +4762,7 @@
     <Content Include="Views\Product\_Category1.cshtml" />
     <Content Include="Views\Product\_Category2.cshtml" />
     <Content Include="Views\Search\_SearhFormPartial.cshtml" />
+    <Content Include="Views\Search\_CategoryListPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
