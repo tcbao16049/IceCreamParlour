@@ -4701,6 +4701,7 @@
     <Content Include="Areas\Admin\Views\Content\RecycelBin.cshtml" />
     <Content Include="Areas\Admin\Views\Login\ForgotPassword.cshtml" />
     <Content Include="Areas\Admin\Views\Login\ChangePassword.cshtml" />
+    <Content Include="Areas\Admin\Views\ContentCategory\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
