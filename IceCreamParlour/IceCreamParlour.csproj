@@ -4707,6 +4707,8 @@
     <Content Include="Areas\Admin\Views\ContentCategory\RecycelBin.cshtml" />
     <Content Include="Areas\Admin\Views\Producer\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Producer\RecycelBin.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductCategory\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductCategory\RecycelBin.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
