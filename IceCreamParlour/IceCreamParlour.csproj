@@ -4764,6 +4764,7 @@
     <Content Include="Views\Search\_CategoryListPartial.cshtml" />
     <Content Include="Views\Shared\TopMenu.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\CategoryContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
