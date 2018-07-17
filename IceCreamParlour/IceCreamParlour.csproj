@@ -191,6 +191,7 @@
     <Compile Include="Areas\Admin\Controllers\PermissionController.cs" />
     <Compile Include="Areas\Admin\Controllers\PriceController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProducerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductCategoryController.cs" />
     <Compile Include="Areas\Admin\Models\BusinessModel\PermissionAction.cs" />
     <Compile Include="Areas\Admin\Models\BusinessModel\ReflectionController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
@@ -4746,6 +4747,8 @@
     <Content Include="Areas\Admin\Views\Price\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Price\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Price\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Producer\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Producer\RecycelBin.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -4775,7 +4778,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Views\Producer\" />
     <Folder Include="Areas\Admin\Views\ProductCategory\" />
     <Folder Include="Areas\Admin\Views\Product\" />
     <Folder Include="Areas\Admin\Views\Sale\" />
