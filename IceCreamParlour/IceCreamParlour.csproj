@@ -195,6 +195,7 @@
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\SaleController.cs" />
     <Compile Include="Areas\Admin\Controllers\SlideController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\Admin\Models\BusinessModel\PermissionAction.cs" />
     <Compile Include="Areas\Admin\Models\BusinessModel\ReflectionController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
