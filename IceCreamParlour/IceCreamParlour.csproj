@@ -181,6 +181,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\FeedBackController.cs" />
+    <Compile Include="Controllers\FeedBackController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Areas\Admin\Controllers\BusinessController.cs" />
     <Compile Include="Areas\Admin\Controllers\ContentCategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\ContentController.cs" />
@@ -4732,6 +4736,7 @@
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound4.ogg" />
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound5.ogg" />
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound6.ogg" />
+    <Content Include="Areas\Admin\Views\FeedBack\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Business\Index.cshtml" />
     <Content Include="Areas\Admin\Views\ContentCategory\Index.cshtml" />
     <Content Include="Areas\Admin\Views\ContentCategory\RecycelBin.cshtml" />
@@ -4793,12 +4798,16 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\ChangePassword.cshtml" />
+    <Content Include="Views\Home\ForgotPassword.cshtml" />
+    <Content Include="Views\FeedBack\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\BusinessModel\" />
     <Folder Include="Assets\Admin\images\" />
     <Folder Include="Assets\Client\img\bioproduct\category-icons\" />
     <Folder Include="Assets\Client\img\bioproduct\images\" />
