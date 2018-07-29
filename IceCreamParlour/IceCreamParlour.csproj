@@ -193,6 +193,9 @@
     <Compile Include="Areas\Admin\Controllers\ProducerController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductCategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SaleController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SlideController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\Admin\Models\BusinessModel\PermissionAction.cs" />
     <Compile Include="Areas\Admin\Models\BusinessModel\ReflectionController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
@@ -4756,6 +4759,17 @@
     <Content Include="Areas\Admin\Views\Product\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Product\RecycelBin.cshtml" />
+    <Content Include="Areas\Admin\Views\Sale\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Sale\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Sale\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Slide\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Slide\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Slide\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\User\RecycelBin.cshtml" />
+    <Content Include="Areas\Admin\Views\User\UserProfile.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -4785,9 +4799,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Views\Sale\" />
-    <Folder Include="Areas\Admin\Views\Slide\" />
-    <Folder Include="Areas\Admin\Views\User\" />
     <Folder Include="Assets\Admin\images\" />
     <Folder Include="Assets\Client\img\bioproduct\category-icons\" />
     <Folder Include="Assets\Client\img\bioproduct\images\" />
