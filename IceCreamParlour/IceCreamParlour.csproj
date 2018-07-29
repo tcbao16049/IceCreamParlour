@@ -4826,7 +4826,6 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Cart\CartHeader.cshtml" />
@@ -4853,6 +4852,9 @@
     <Content Include="Views\Home\ChangePassword.cshtml" />
     <Content Include="Views\Home\ForgotPassword.cshtml" />
     <Content Include="Views\FeedBack\Index.cshtml" />
+    <Content Include="Views\Shared\TopMenu.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\CategoryContent.cshtml" />
     <Content Include="Views\Content\Category.cshtml" />
     <Content Include="Views\Content\Detail.cshtml" />
     <Content Include="Views\Content\Index.cshtml" />
