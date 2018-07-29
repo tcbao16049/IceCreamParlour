@@ -181,6 +181,29 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="EF\Business.cs" />
+    <Compile Include="EF\Content.cs" />
+    <Compile Include="EF\ContentCategory.cs" />
+    <Compile Include="EF\FeedBack.cs" />
+    <Compile Include="EF\GrantPermission.cs" />
+    <Compile Include="EF\GroupUser.cs" />
+    <Compile Include="EF\Order.cs" />
+    <Compile Include="EF\OrderDetail.cs" />
+    <Compile Include="EF\Payment.cs" />
+    <Compile Include="EF\Permission.cs" />
+    <Compile Include="EF\Price.cs" />
+    <Compile Include="EF\Producer.cs" />
+    <Compile Include="EF\Product.cs" />
+    <Compile Include="EF\ProductCategory.cs" />
+    <Compile Include="EF\Sale.cs" />
+    <Compile Include="EF\Slide.cs" />
+    <Compile Include="EF\SlideType.cs" />
+    <Compile Include="EF\SmartShopDbContext.cs" />
+    <Compile Include="EF\User.cs" />
     <Compile Include="Areas\Admin\Controllers\ContentCategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\ContentController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
@@ -235,6 +258,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\EmailModel.cs" />
+    <Compile Include="Models\Orders.cs" />
+    <Compile Include="Models\Paypal.cs" />
+    <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -4809,6 +4837,25 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Cart\CartHeader.cshtml" />
+    <Content Include="Views\Cart\CartRight.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Cart\Payment.cshtml" />
+    <Content Include="Views\Cart\Success.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\NewProduct.cshtml" />
+    <Content Include="Views\Product\ProductFeature.cshtml" />
+    <Content Include="Views\Product\SaleProduct.cshtml" />
+    <Content Include="Views\Product\ProductcategoryBook.cshtml" />
+    <Content Include="Views\Product\ProductcategoryCream.cshtml" />
+    <Content Include="Views\Product\ProductcategoryDessert.cshtml" />
+    <Content Include="Views\Product\Detail.cshtml" />
+    <Content Include="Views\Product\ProductsRelated.cshtml" />
+    <Content Include="Views\Product\_Category.cshtml" />
+    <Content Include="Views\Product\_Category1.cshtml" />
+    <Content Include="Views\Product\_Category2.cshtml" />
+    <Content Include="Views\Search\_SearhFormPartial.cshtml" />
+    <Content Include="Views\Search\_CategoryListPartial.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\ChangePassword.cshtml" />
@@ -4831,8 +4878,6 @@
     <Folder Include="Assets\Client\img\lingerie\slides\" />
     <Folder Include="Assets\Client\img\medstore\" />
     <Folder Include="Data\flash\" />
-    <Folder Include="EF\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
