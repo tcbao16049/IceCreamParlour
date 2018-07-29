@@ -181,6 +181,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContentCategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContentController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductCategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\FeedBackController.cs" />
     <Compile Include="Controllers\FeedBackController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -4736,6 +4741,7 @@
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound4.ogg" />
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound5.ogg" />
     <Content Include="Assets\Plugin\lobibox-master\sounds\sound6.ogg" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <Content Include="Areas\Admin\Views\FeedBack\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Business\Index.cshtml" />
     <Content Include="Areas\Admin\Views\ContentCategory\Index.cshtml" />
@@ -4744,6 +4750,10 @@
     <Content Include="Areas\Admin\Views\Content\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Content\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Content\RecycelBin.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\ForgotPassword.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\ChangePassword.cshtml" />
+    <Content Include="Areas\Admin\Views\ContentCategory\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ContentCategory\RecycelBin.cshtml" />
     <Content Include="Areas\Admin\Views\GrantPermission\Index.cshtml" />
     <Content Include="Areas\Admin\Views\GroupUser\Index.cshtml" />
     <Content Include="Areas\Admin\Views\GroupUser\Create.cshtml" />
