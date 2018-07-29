@@ -4767,7 +4767,6 @@
     <Content Include="Areas\Admin\Views\FeedBack\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Business\Index.cshtml" />
     <Content Include="Areas\Admin\Views\ContentCategory\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\ContentCategory\RecycelBin.cshtml" />
     <Content Include="Areas\Admin\Views\Content\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Content\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Content\Edit.cshtml" />
