@@ -1,31 +1,327 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+@section Slide{
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                @foreach (var item in ViewBag.slide)
+                {
+                    <li data-transition="3dcurtain-vertical" data-slotamount="7" data-masterspeed="500" data-thumb="@item.Image" >
+                    <!-- MAIN IMAGE -->
+                    <img src="~/Assets/Client/img/dummy.png" alt="laptopmockup_sliderdy" data-lazyload="@item.Image" data-bgposition="right top" data-kenburns="on" data-duration="12000" data-ease="Power0.easeInOut" data-bgfit="115" data-bgfitend="100" data-bgpositionend="center bottom">
+                    <!-- LAYERS -->
+
+                  
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption text3 skewfromrightshort fadeout"
+                         data-x="10"
+                         data-y="440"
+                         data-speed="1000"
+                         data-start="1500"
+                         data-easing="Power3.easeInOut"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-elementdelay="0.1"
+                         data-endelementdelay="0.1"
+                         data-endspeed="300"
+                         style="z-index: 5; max-width: auto; font-family: 'Lato', sans-serif;max-height: auto; white-space: nowrap;">@item.Description</div>
+                </li>
+                }
+                <!-- SLIDE -->
+                
+                <!-- SLIDE -->
+
+            </ul>
+            <!--          <div class="tp-bannertimer"></div>
+            -->
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+}
+
+@* load slide chỉ cho mổ trang index *@
+
+    <section id="content">
+        @*@<div class="custom_blocks animate-delay-outer">
+            <div class="container">
+                <div class="pull-left">
+                    <div class="wrapper_w">
+                        <div class="box animate-delay scale">
+                            <div class="inside">
+                                <div class="btn_outer"><a href="#" class="btn squared icon-truck-2 icon-4x color1"></a></div>
+                                <a href="#"><span class="text">FREE SHIPPING</span></a>
+                            </div>
+                        </div>
+                        <div class="box animate-delay scale">
+                            <div class="inside">
+                                <div class="btn_outer"><a href="#" class="btn squared icon-money-3 icon-4x color2"></a></div>
+                                <a href="#"><span class="text">CASH ON DELIVERY</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pull-left">
+                    <div class="wrapper_w">
+                        <div class="box animate-delay scale">
+                            <div class="inside">
+                                <div class="btn_outer"><a href="#" class="btn squared  icon-round8 icon-4x color3"></a></div>
+                                <a href="#"><span class="text">30-DAY RETURNS</span></a>
+                            </div>
+                        </div>
+                        <div class="box animate-delay scale ">
+                            <div class="inside">
+                                <div class="btn_outer"><a href="#" class="btn squared icon-airplane-4 icon-4x color4"></a></div>
+                                <a href="#"><span class="text">World Shipping</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+        
+        
+            <div class="container">
+                <a href="/Product/"><h3 class="padding">Sản phẩm mới </h3></a>
+                <div class="carousel es-carousel-wrapper style0">
+                    <div class="es-carousel">
+                        <div class="row">
+                            @*  *@
+
+                            @{Html.RenderAction("NewProduct", "Product");}
+
+                            @*  *@
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                
+        <div class="line"></div>
+        <div class="container">
+            <a href="/Product/"><h3 class="padding">Sản phẩm phổ biến </h3></a>
+
+            <div class="carousel es-carousel-wrapper style0">
+                <div class="es-carousel">
+                    <div class="row">
+
+                        @{Html.RenderAction("ProductFeature", "Product");}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container">
+            <a href="/Product/"><h3 class="padding">Sản phẩm giảm giá </h3></a>
+            <div class="carousel es-carousel-wrapper style0">
+                <div class="es-carousel">
+                    <div class="row">
+                        @{Html.RenderAction("SaleProduct", "Product");}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fullwidth-block">
+            <div class="parallax-block parallax">
+                <div class="container">
+                    <div class="row">
+                        <div class="span8 offset2">
+                            <h1 class="aligncenter">Giới thiệu</h1>
+                            <div class="carousel-testimonials">
+                                <div class="quotes">&#8220;</div>
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li>
+                                            <p>Với bề dày gần 10 năm kinh nghiệm và uy tín đã tạo được trong những năm vừa qua, chúng tôi luôn đem lại cho khách hàng sự hài lòng và thỏa mãn với tất cả các sản phẩm của mình.</p>
+                                            <p><span>Admin, Bảo Trần</span></p>
+                                        </li>
+                                        <li>
+                                            <p>Bên cạnh đó là đội ngũ nhân viên nhiệt tình chu đáo và đầy kinh nghiệm của chúng tôi luôn đưa được ra cho khách hàng những thông tin có giá trị và giúp khách hàng lựa chọn được những sản phẩm phù hợp nhất.</p>
+                                            <p><span>John Smith, Marketing </span></p>
+                                        </li>
+                                        <li>
+                                            <p>Chúng tôi mong muốn sự đóng góp của khách hàng sẽ giúp chúng tôi ngày một phát triển để từ đó củng cố thêm lòng tin của khách hàng với chúng tôi. Chúng tôi rất biết ơn sự tin tưởng của khách hàng trong suốt gần 10 năm qua và chúng tôi luôn tâm niệm rằng cần phải cố gắng hơn nữa để xứng đáng với phương châm đề ra “Nếu những gì chúng tôi không có, nghĩa là bạn không cần” .</p>
+                                            <p><span>Jodie Smith, Designer and Developer</span></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*<div class="line"></div>
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h3 class="padding">Blog Posts</h3>
+                    <div class="carousel es-carousel-wrapper style2 from-blog">
+                        <div class="es-carousel">
+                            <div class="row">
+                                <div class="carousel_items">
+                                    <div class="span6 carousel_item">
+                                        <div class="row-fluid">
+                                            <div class="span5"><a href="blog_single_post.html"><img src="~/Assets/Client/img/sport/blog_img.jpg" alt="" class="animate pulse"></a></div>
+                                            <div class="span7">
+                                                <h4>Integer vel nibh sit amet turpis aliquet</h4>
+                                                <p><span class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a></span>&nbsp;&nbsp;<a href="blog_single_post.html">5 Comments</a></p>
+                                                <p>Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac commodo iaculis, mi risus sagittis odio, vel ultrices enim sem ut imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span6 carousel_item">
+                                        <div class="row-fluid">
+                                            <div class="span5"><a href="blog_single_post.html"><img src="~/Assets/Client/img/sport/blog_img1.jpg" alt="" class="animate pulse"></a></div>
+                                            <div class="span7">
+                                                <h4>Integer vel nibh sit amet turpis aliquet</h4>
+                                                <p><span class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a></span>&nbsp;&nbsp;<a href="blog_single_post.html">5 Comments</a></p>
+                                                <p>Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac commodo iaculis, mi risus sagittis odio, vel ultrices enim sem ut imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span6 carousel_item">
+                                        <div class="row-fluid">
+                                            <div class="span5"><a href="blog_single_post.html"><img src="~/Assets/Client/img/sport/blog_img.jpg" alt="" class="animate pulse"></a></div>
+                                            <div class="span7">
+                                                <h4>Integer vel nibh sit amet turpis aliquet</h4>
+                                                <p><span class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a></span>&nbsp;&nbsp;<a href="blog_single_post.html">5 Comments</a></p>
+                                                <p>Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac commodo iaculis, mi risus sagittis odio, vel ultrices enim sem ut imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span6 carousel_item">
+                                        <div class="row-fluid">
+                                            <div class="span5"><a href="blog_single_post.html"><img src="~/Assets/Client/img/sport/blog_img1.jpg" alt="" class="animate pulse"></a></div>
+                                            <div class="span7">
+                                                <h4>Integer vel nibh sit amet turpis aliquet</h4>
+                                                <p><span class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a></span>&nbsp;&nbsp;<a href="blog_single_post.html">5 Comments</a></p>
+                                                <p>Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac commodo iaculis, mi risus sagittis odio, vel ultrices enim sem ut imperdiet. Integer ligula magna, dictum et, pulvinar non, ultricies ac, nibh... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+        <div class="bottom_block">
+            <div class="container">
+                <div class="row animate-delay-outer">
+                    <div class="span6">
+                        <div class="row">
+                            <div class="span3 animate-delay fadeUp">
+                                <h3><i class="icon-briefcase"></i>About <span class="custom_color">SPORTAGE</span></h3>
+                                <div class="cleancode">
+                                    <p><strong>Fusce eu dui. Integer vel nibh sit amet turpis vulputate aliquet. </strong>Phasellus id tesque a leo. Donec consequat lectus sed felis. Quisque vestibulum massa. Nulla ornare. Nulla libero.</p>
+                                    <p>
+                                        Nullam ac nisi non eros gravida venenatis.<br>
+                                        Ut euismod, turpis sollicitudin lobortis pellentesque, libero massa dapibus dui, eu dictum justo urna et mi. Integer dictum est vitae sem.
+                                    </p>
+                                    <p>Vestibulum justo. Nulla mauris ipsum, convallis ut, vestibulum eu, tincidunt vel, nisi. Curabitur molestie euismod erat. Proin eros odio, mattis rutrum. </p>
+                                </div>
+                            </div>
+                            <div class="span3 animate-delay fadeUp">
+                                <h3><i class="icon-facebook-rect"></i>Facebook</h3>
+                                <div class="fb_outer">
+                                    <div>120 people like <strong><a href="#"><span class="custom_color">SPORTAGE</span><span class="custom_color1"></span></a></strong></div>
+                                    <div class="items_row">
+                                        <div class="item">
+                                            <div class="photo"><a href="#"><img src="~/Assets/Client/img/fb/fb_user.png" alt=""></a></div>
+                                            <div class="name"><a href="#">loremipsum</a></div>
+                                        </div>
+                                        <div class="item aligncenter">
+                                            <div class="photo"><a href="#"><img src="~/Assets/Client/img/fb/fb_user-02.png" alt=""></a></div>
+                                            <div class="name"><a href="#">dolor</a></div>
+                                        </div>
+                                        <div class="item alignright">
+                                            <div class="photo"><a href="#"><img src="~/Assets/Client/img/fb/fb_user-03.png" alt=""></a></div>
+                                            <div class="name"><a href="#">sitamet</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="items_row">
+                                        <div class="item">
+                                            <div class="photo"><a href="#"><img src="~/Assets/Client/img/fb/fb_user-04.png" alt=""></a></div>
+                                            <div class="name"><a href="#">diam</a></div>
+                                        </div>
+                                        <div class="item aligncenter">
+                                            <div class="photo"><a href="#"><img src="~/Assets/Client/img/fb/fb_user-05.png" alt=""></a></div>
+                                            <div class="name"><a href="#">labore</a></div>
+                                        </div>
+                                        <div class="item alignright">
+                                            <div class="photo"><a href="#"><img src="~/Assets/Client/img/fb/fb_user-06.png" alt=""></a></div>
+                                            <div class="name"><a href="#">nonumy</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="items_row">
+                                        <div class="item">
+                                            <div class="photo"><a href="#"><img src="~/Assets/Client/img/fb/fb_user-07.png" alt=""></a></div>
+                                            <div class="name"><a href="#">loremipsum</a></div>
+                                        </div>
+                                        <div class="item aligncenter">
+                                            <div class="photo"><a href="#"><img src="~/Assets/Client/img/fb/fb_user-08.png" alt=""></a></div>
+                                            <div class="name"><a href="#">dolor</a></div>
+                                        </div>
+                                        <div class="item alignright">
+                                            <div class="photo"><a href="#"><img src="~/Assets/Client/img/fb/fb_user-09.png" alt=""></a></div>
+                                            <div class="name"><a href="#">sitamet</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div class="row">
+                            <div class="span3 animate-delay fadeUp">
+                                <h3><i class="icon-twitter-bird"></i>Twitter Feeds</h3>
+                                <div class="twit">
+                                    <div class="icon"><i class="icon-twitter-bird"></i></div>
+                                    <div class="mess">
+                                        Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac More info at  labore <a href="http://t.co/f9E9cJEg">http://t.co/f9E9cJEg</a> Thanks for the patience :)<br>
+                                        3 days ago
+                                    </div>
+                                </div>
+                                <div class="twit">
+                                    <div class="icon"><i class="icon-twitter-bird"></i></div>
+                                    <div class="mess">
+                                        Nullam id justo sed diam aliquam tincidunt. Duis sollicitudin, dui ac More info at  labore <a href="http://t.co/f9E9cJEg">http://t.co/f9E9cJEg</a> Thanks for the patience :) <br>
+                                        3 days ago
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3 animate-delay fadeUp">
+                                <h3><i class="icon-mail-1"></i>Contact Us</h3>
+                                <div class="cleancode">
+                                    <ul class="icons">
+                                        <li>
+                                            <i class="icon-call"></i><strong>CONTACT PHONE:</strong><br>
+                                            321321321, 321321321
+                                        </li>
+                                        <li>
+                                            <i class="icon-mobile-alt"></i><strong>CELL PHONE:</strong><br>
+                                            123123123,  123123123
+                                        </li>
+                                        <li>
+                                            <i class="icon-mail-1"></i><strong>E-MAIL ADDRESSES:</strong><br>
+                                            <a href="mailto:sales@mydomain.com">SALES@MYDOMAIL.COM</a> <br>
+                                            <a href="mailto:info@mydomain.com">INFO@MYDOMAIN.COM</a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-skype"></i><strong>SKYPE:</strong><br>
+                                            TEST.SHOP,   SHOP.TEST
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
